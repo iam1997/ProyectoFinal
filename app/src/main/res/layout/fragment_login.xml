@@ -36,8 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:ems="10"
+        android:hint="Usuario"
         android:minHeight="48dp"
-        android:text="Usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_descripción" />
@@ -49,7 +49,7 @@
         android:layout_marginTop="30dp"
         android:ems="10"
         android:minHeight="48dp"
-        android:text="Contraseña"
+        android:hint="Contraseña"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_usuario" />
@@ -75,7 +75,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_ingresar"
         app:cornerRadius="25dp"/>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
