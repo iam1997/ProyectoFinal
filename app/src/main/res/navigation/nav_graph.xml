@@ -9,5 +9,14 @@
         android:id="@+id/loginFragment"
         android:name="com.example.proyectofinal.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_crearCuentaFragment"
+            app:destination="@id/crearCuentaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearCuentaFragment"
+        android:name="com.example.proyectofinal.CrearCuentaFragment"
+        android:label="fragment_crear_cuenta"
+        tools:layout="@layout/fragment_crear_cuenta" />
 </navigation>
