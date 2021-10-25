@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.proyectofinal.databinding.FragmentCrearCuentaBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -25,7 +26,6 @@ class CrearCuentaFragment : Fragment() {
     private var _binding: FragmentCrearCuentaBinding? = null
     private val binding get() = _binding!!
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -41,8 +41,11 @@ class CrearCuentaFragment : Fragment() {
 
         _binding = FragmentCrearCuentaBinding.inflate(inflater, container, false)
 
-        return binding.root
+        binding.buttonCrearCrearCuenta.setOnClickListener {
+            findNavController().navigate(R.id.action_crearCuentaFragment_to_homeFragment)
+        }
 
+        return binding.root
 
     }
 

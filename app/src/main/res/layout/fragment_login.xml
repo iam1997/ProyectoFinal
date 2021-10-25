@@ -30,29 +30,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_kokoLogin" />
 
-    <EditText
-        android:id="@+id/editText_usuarioLogin"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_usuarioLogin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:ems="10"
-        android:hint="Usuario"
-        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_descripciónLogin" />
+        app:layout_constraintTop_toBottomOf="@id/textView_descripciónLogin"
+        app:boxBackgroundColor="@color/white">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_usuarioLogin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:minHeight="48dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editText_contraseñaLogin"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_contraseñaLogin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
-        android:minHeight="48dp"
-        android:hint="Contraseña"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_usuarioLogin" />
+        app:layout_constraintTop_toBottomOf="@id/textField_usuarioLogin"
+        app:endIconMode="password_toggle"
+        app:boxBackgroundColor="@color/white">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_contraseñaLogin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_ingresarLogin"
@@ -62,7 +76,7 @@
         android:text="Ingresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_contraseñaLogin"
+        app:layout_constraintTop_toBottomOf="@+id/textField_contraseñaLogin"
         app:cornerRadius="25dp"/>
 
     <com.google.android.material.button.MaterialButton
