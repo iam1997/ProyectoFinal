@@ -28,11 +28,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView_creaTuCuentaCrearCuenta"
         app:boxBackgroundColor="@color/white">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editText_usuarioCrearCuenta"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="Usuario"
+            android:inputType="text"
             android:minHeight="48dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,11 +48,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textField_usuarioCrearCuenta"
         app:boxBackgroundColor="@color/white">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editText_correoCrearCuenta"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="Correo electrónico"
+            android:inputType="text"
             android:minHeight="48dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
