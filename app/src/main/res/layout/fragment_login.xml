@@ -45,7 +45,9 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="Usuario"
-            android:minHeight="48dp" />
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="48dp"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
