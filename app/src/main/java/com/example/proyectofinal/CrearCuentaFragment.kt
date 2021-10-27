@@ -1,10 +1,12 @@
 package com.example.proyectofinal
 
 import android.os.Bundle
+import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.proyectofinal.databinding.FragmentCrearCuentaBinding
 
@@ -42,7 +44,23 @@ class CrearCuentaFragment : Fragment() {
         _binding = FragmentCrearCuentaBinding.inflate(inflater, container, false)
 
         binding.buttonCrearCrearCuenta.setOnClickListener {
-            findNavController().navigate(R.id.action_crearCuentaFragment_to_homeFragment)
+            val usuario = binding.editTextUsuarioCrearCuenta.text.toString()
+            val correo = binding.editTextCorreoCrearCuenta.text.toString()
+            val contrasena = binding.editTextContraseACrearCuenta.text.toString()
+            val repiteContrasena = binding.editTextRepiteContraseACrearCuenta.text.toString()
+
+            if (usuario == "" || correo ==  "" || contrasena == "" || repiteContrasena == "") {
+                Toast.makeText(activity,"Teclea datos en todos los campos.", Toast.LENGTH_SHORT).show()
+            }
+            else if (!Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
+                Toast.makeText(activity,"El correo electrónico no es valido.", Toast.LENGTH_SHORT).show()
+            }
+            else if (contrasena != repiteContrasena) {
+                Toast.makeText(activity,"Las contraseñas no coinciden.", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                findNavController().navigate(R.id.action_crearCuentaFragment_to_homeFragment)
+            }
         }
 
         return binding.root
