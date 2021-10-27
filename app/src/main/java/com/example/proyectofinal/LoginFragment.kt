@@ -58,7 +58,6 @@ class LoginFragment : Fragment() {
         binding.buttonCrearCuentaLogin.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_crearCuentaFragment)
         }
-
         return binding.root
     }
 

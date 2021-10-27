@@ -62,7 +62,6 @@ class CrearCuentaFragment : Fragment() {
                 findNavController().navigate(R.id.action_crearCuentaFragment_to_homeFragment)
             }
         }
-
         return binding.root
 
     }
