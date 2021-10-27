@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.proyectofinal.databinding.FragmentCrearCuentaBinding
 import com.example.proyectofinal.databinding.FragmentLoginBinding
@@ -43,13 +44,20 @@ class LoginFragment : Fragment() {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
 
         binding.buttonIngresarLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+            val usuario = binding.editTextUsuarioLogin.text.toString()
+            val contrasena = binding.editTextContraseALogin.text.toString()
+
+            if (usuario == "" || contrasena == "") {
+                Toast.makeText(activity,"Teclea datos en todos los campos.", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+            }
         }
 
         binding.buttonCrearCuentaLogin.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_crearCuentaFragment)
         }
-
         return binding.root
     }
 
