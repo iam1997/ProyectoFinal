@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecursosFragment">
+
+    <TextView
+        android:id="@+id/textView_leccionesAprende"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Lecciones"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_leccion1Aprende"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:text="Lección 1"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/switch_leccion1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_leccionesAprende" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_leccion2Aprende"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:text="Lección 2"
+        app:cornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_leccion1Aprende" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_leccion3Aprende"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:text="Lección 3"
+        app:cornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_leccion2Aprende" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_leccion4Aprende"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:text="Lección 4"
+        app:cornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_leccion3Aprende" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_volverAprende"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Volver"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_leccion4Aprende" />
+
+    <Switch
+        android:id="@+id/switch_leccion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/button_leccion1Aprende"
+        app:layout_constraintTop_toBottomOf="@+id/textView_leccionesAprende" />
+
+    <Switch
+        android:id="@+id/switch_leccion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/button_leccion2Aprende"
+        app:layout_constraintTop_toBottomOf="@+id/button_leccion1Aprende" />
+
+    <Switch
+        android:id="@+id/switch_leccion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/button_leccion2Aprende"
+        app:layout_constraintTop_toBottomOf="@+id/button_leccion2Aprende" />
+
+    <Switch
+        android:id="@+id/switch_leccion4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/button_leccion3Aprende"
+        app:layout_constraintTop_toBottomOf="@+id/button_leccion3Aprende" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Marcar como favorito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_leccionesAprende" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

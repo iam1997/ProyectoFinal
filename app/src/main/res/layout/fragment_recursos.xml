@@ -27,6 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView_recursosRecursos"
+
         app:cornerRadius="25dp"/>
 
     <com.google.android.material.button.MaterialButton

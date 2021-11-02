@@ -5,10 +5,11 @@
       <map>
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/00_ProyectoFinal/app/src/main/res/layout/activity_main.xml" value="0.165625" />
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/00_ProyectoFinal/app/src/main/res/layout/fragment_login.xml" value="0.2138728323699422" />
+        <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/ProyectoFinal/app/src/main/res/layout/fragment_aprende.xml" value="0.5" />
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/ProyectoFinal/app/src/main/res/layout/fragment_crear_cuenta.xml" value="0.4467005076142132" />
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/ProyectoFinal/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/ProyectoFinal/app/src/main/res/layout/fragment_login.xml" value="0.37209302325581395" />
-        <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/ProyectoFinal/app/src/main/res/layout/fragment_recursos.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/ProyectoFinal/app/src/main/res/layout/fragment_recursos.xml" value="0.27906976744186046" />
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/Test/app/src/main/res/layout/fragment_crear_cuenta.xml" value="0.22" />
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/Test/app/src/main/res/layout/fragment_login.xml" value="0.22" />
       </map>
@@ -19,5 +20,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5" />
+      </ProjectState>
+    </option>
   </component>
 </project>

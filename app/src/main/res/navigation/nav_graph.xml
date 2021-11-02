@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_homeFragment_to_recursosFragment"
             app:destination="@id/recursosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aprendeFragment"
+            app:destination="@id/aprendeFragment" />
     </fragment>
     <fragment
         android:id="@+id/recursosFragment"
@@ -45,6 +48,14 @@
         tools:layout="@layout/fragment_recursos" >
         <action
             android:id="@+id/action_recursosFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aprendeFragment"
+        android:name="com.example.proyectofinal.AprendeFragment"
+        android:label="AprendeFragment" >
+        <action
+            android:id="@+id/action_aprendeFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
 </navigation>
