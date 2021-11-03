@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_homeFragment_to_aprendeFragment"
             app:destination="@id/aprendeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_leccionesFavFragment"
+            app:destination="@id/leccionesFavFragment" />
     </fragment>
     <fragment
         android:id="@+id/recursosFragment"
@@ -56,6 +59,14 @@
         android:label="AprendeFragment" >
         <action
             android:id="@+id/action_aprendeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leccionesFavFragment"
+        android:name="com.example.proyectofinal.LeccionesFavFragment"
+        android:label="LeccionesFavFragment" >
+        <action
+            android:id="@+id/action_leccionesFavFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
 </navigation>
