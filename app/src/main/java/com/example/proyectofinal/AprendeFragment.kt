@@ -1,5 +1,7 @@
 package com.example.proyectofinal
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -42,11 +44,47 @@ class AprendeFragment : Fragment() {
 
         _binding = FragmentAprendeBinding.inflate(inflater, container, false)
 
+        getFavorite()
+
         binding.buttonVolverAprende.setOnClickListener {
             findNavController().navigate(R.id.action_aprendeFragment_to_homeFragment)
+            saveFavorite()
         }
 
         return binding.root
+    }
+
+    private fun saveFavorite() {
+        val saveLeccion1State = binding.switchLeccion1.isChecked
+        val saveLeccion2State = binding.switchLeccion2.isChecked
+        val saveLeccion3State = binding.switchLeccion3.isChecked
+        val saveLeccion4State = binding.switchLeccion4.isChecked
+        val saveLeccion5State = binding.switchLeccion5.isChecked
+
+        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
+        with (sharedPref.edit()) {
+            putBoolean("STATE_LECCION1", saveLeccion1State)
+            putBoolean("STATE_LECCION2", saveLeccion2State)
+            putBoolean("STATE_LECCION3", saveLeccion3State)
+            putBoolean("STATE_LECCION4", saveLeccion4State)
+            putBoolean("STATE_LECCION5", saveLeccion5State)
+            apply()
+        }
+    }
+
+    private fun getFavorite() {
+        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
+        val getLeccion1State = sharedPref.getBoolean("STATE_LECCION1", false)
+        val getLeccion2State = sharedPref.getBoolean("STATE_LECCION2", false)
+        val getLeccion3State = sharedPref.getBoolean("STATE_LECCION3", false)
+        val getLeccion4State = sharedPref.getBoolean("STATE_LECCION4", false)
+        val getLeccion5State = sharedPref.getBoolean("STATE_LECCION5", false)
+
+        binding.switchLeccion1.isChecked = getLeccion1State
+        binding.switchLeccion2.isChecked = getLeccion2State
+        binding.switchLeccion3.isChecked = getLeccion3State
+        binding.switchLeccion4.isChecked = getLeccion4State
+        binding.switchLeccion5.isChecked = getLeccion5State
     }
 
     companion object {
