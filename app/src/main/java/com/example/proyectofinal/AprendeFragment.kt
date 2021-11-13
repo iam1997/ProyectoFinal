@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.proyectofinal.databinding.FragmentAprendeBinding
-import com.example.proyectofinal.databinding.FragmentCrearCuentaBinding
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -49,6 +49,12 @@ class AprendeFragment : Fragment() {
         binding.buttonVolverAprende.setOnClickListener {
             findNavController().navigate(R.id.action_aprendeFragment_to_homeFragment)
             saveFavorite()
+        }
+
+        binding.buttonLeccion1Aprende.setOnClickListener{
+            findNavController().navigate(R.id.action_aprendeFragment_to_leccionesSeleccionadasFragment)
+            saveFavorite()
+
         }
 
         return binding.root

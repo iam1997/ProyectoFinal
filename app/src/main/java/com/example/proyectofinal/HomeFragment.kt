@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.proyectofinal.databinding.FragmentCrearCuentaBinding
 import com.example.proyectofinal.databinding.FragmentHomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -54,9 +53,6 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_recursosFragment)
         }
 
-        binding.buttonCerrarSessionHome.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
-        }
 
         return binding.root
     }
