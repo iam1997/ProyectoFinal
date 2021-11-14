@@ -57,19 +57,19 @@ class RecursosSeleccionadosFragment : Fragment() {
     }
 
     //todo recursos seleccionados el recyvler view como en lecciones selecc
-    /*
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //init adapter
         //crear y ligarlo al rview de lecciones
         //new prop layout manager
         val adapter = RVAdapter(viewModel.flashcards)
-        binding.rvLecciones.adapter = adapter
-        binding.rvLecciones.layoutManager = LinearLayoutManager(this.context)
+        binding.rvRecursos.adapter = adapter
+        binding.rvRecursos.layoutManager = LinearLayoutManager(this.context)
 
 
     }
-    */
+
 
     companion object {
         /**
