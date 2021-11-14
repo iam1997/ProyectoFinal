@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.proyectofinal.databinding.FragmentLoginBinding
 import com.example.proyectofinal.databinding.FragmentRecursosBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -23,6 +23,8 @@ class RecursosFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
+    private val viewModel: RecursosViewModel by activityViewModels()
 
     private var _binding: FragmentRecursosBinding? = null
     private val binding get() = _binding!!
@@ -44,6 +46,15 @@ class RecursosFragment : Fragment() {
 
         binding.buttonVolverRecursos.setOnClickListener {
             findNavController().navigate(R.id.action_recursosFragment_to_homeFragment)
+        }
+
+        binding.buttonRecurso1Recursos.setOnClickListener{
+            viewModel.setRecurso(1)
+            findNavController().navigate(R.id.action_recursosFragment_to_recursosSeleccionadosFragment)
+        }
+        binding.buttonRecurso2Recursos.setOnClickListener{
+            viewModel.setRecurso(2)
+            findNavController().navigate(R.id.action_recursosFragment_to_recursosSeleccionadosFragment)
         }
 
         return binding.root
