@@ -23,9 +23,10 @@ private const val ARG_PARAM2 = "param2"
 private var _binding: FragmentRecursosSeleccionadosBinding? = null
 private val binding get() = _binding!!
 
+private lateinit var viewModel : RecursosViewModel
+
 class RecursosSeleccionadosFragment : Fragment() {
 
-    val viewModel = ViewModelProvider(requireActivity()).get(RecursosViewModel::class.java)
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -46,11 +47,10 @@ class RecursosSeleccionadosFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-       // return inflater.inflate(R.layout.fragment_recursos_seleccionados, container, false)
-        _binding  = FragmentRecursosSeleccionadosBinding.inflate(inflater,container,false)
 
-       // val viewModel = ViewModelProvider(requireActivity()).get(RecursosViewModel::class.java)
+        _binding  = FragmentRecursosSeleccionadosBinding.inflate(inflater,container,false)
+        viewModel = ViewModelProvider(requireActivity()).get(RecursosViewModel::class.java)
+
         //do stuff
 
         return binding.root

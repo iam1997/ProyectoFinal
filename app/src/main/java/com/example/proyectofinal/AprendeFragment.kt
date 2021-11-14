@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.proyectofinal.databinding.FragmentAprendeBinding
 
@@ -23,8 +24,11 @@ private const val ARG_PARAM2 = "param2"
  */
 class AprendeFragment : Fragment() {
     // TODO: Rename and change types of parameters
+    // TODO: Agregar viewmodel de leccion para usar el setLeccion en los clicklisteners
     private var param1: String? = null
     private var param2: String? = null
+
+    private val viewModel: LeccionesViewModel by activityViewModels()
 
     private var _binding: FragmentAprendeBinding? = null
     private val binding get() = _binding!!
@@ -52,9 +56,14 @@ class AprendeFragment : Fragment() {
         }
 
         binding.buttonLeccion1Aprende.setOnClickListener{
+            viewModel.setLeccion(1)
             findNavController().navigate(R.id.action_aprendeFragment_to_leccionesSeleccionadasFragment)
             saveFavorite()
-
+        }
+        binding.buttonLeccion2Aprende.setOnClickListener{
+            viewModel.setLeccion(2)
+            findNavController().navigate(R.id.action_aprendeFragment_to_leccionesSeleccionadasFragment)
+            saveFavorite()
         }
 
         return binding.root
