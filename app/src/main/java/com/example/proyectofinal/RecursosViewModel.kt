@@ -7,7 +7,7 @@ class RecursosViewModel : ViewModel() {
 
     private val _flashcards = mutableListOf<Flashcards>()
 
-    val flashcards = _flashcards
+    var flashcards = _flashcards
 
     init {
         Log.d("RecursosViewModel", "RecursosViewModel created!")
@@ -32,4 +32,15 @@ class RecursosViewModel : ViewModel() {
             R.drawable.adjetivo_conmigo,"Adjetivos: Conmigo")
     )
 
+    fun setRecurso(option: Int) {
+        if( option  == 1){
+            flashcards = recursoA
+        }
+        if (option == 2)
+        {
+            flashcards = recursoB
+        }
+        //repetir hasta el num y final de lecc#letra disponibles
+
+    }
 }

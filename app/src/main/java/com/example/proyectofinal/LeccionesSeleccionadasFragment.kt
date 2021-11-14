@@ -17,8 +17,9 @@ private const val ARG_PARAM2 = "param2"
 
 private var _binding: FragmentLeccionesSeleccionadasBinding? = null
 private val binding get() = _binding!!
-//
-
+//!!!!importante!!!!!
+private lateinit var viewModel : LeccionesViewModel
+//!!!!!!!!!!!
 /**
  * A simple [Fragment] subclass.
  * Use the [LeccionesSeleccionadasFragment.newInstance] factory method to
@@ -26,7 +27,7 @@ private val binding get() = _binding!!
  */
 class LeccionesSeleccionadasFragment : Fragment() {
 
-   private val viewModel = ViewModelProvider(requireActivity()).get(LeccionesViewModel::class.java)
+  // private val viewModel = ViewModelProvider(requireActivity()).get(LeccionesViewModel::class.java)
     //
   //  private lateinit var viewModel : LeccionesViewModel
     // TODO: Rename and change types of parameters
@@ -50,7 +51,7 @@ class LeccionesSeleccionadasFragment : Fragment() {
         //return inflater.inflate(R.layout.fragment_lecciones_seleccionadas, container, false)
 
         _binding  = FragmentLeccionesSeleccionadasBinding.inflate(inflater,container,false)
-
+        viewModel = ViewModelProvider(requireActivity()).get(LeccionesViewModel::class.java)
        // val viewModel = ViewModelProvider(requireActivity()).get(LeccionesViewModel::class.java)
 
         //do stuff
@@ -58,18 +59,14 @@ class LeccionesSeleccionadasFragment : Fragment() {
     }
 
     //
-    var leccAList = mutableListOf(
-        Flashcards("Con la mano cerrada, se muestran las uñas " +
-                "y se estira el dedo pulgar hacia un lado. La palma mira al frente.",
-            R.drawable.letras_a,"Letra A")
-    )
+
     //
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //init adapter
         //crear y ligarlo al rview de lecciones
         //new prop layout manager
-        val adapter = RVAdapter(viewModel.leccAList)
+        val adapter = RVAdapter(viewModel.flashcards)
         binding.rvLecciones.adapter = adapter
         binding.rvLecciones.layoutManager = LinearLayoutManager(this.context)
 
