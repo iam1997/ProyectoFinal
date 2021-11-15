@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/flashcard_item.xml" value="0.5" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/fragment_aprende.xml" value="0.321875" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/fragment_crear_cuenta.xml" value="0.3625" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/fragment_fav_seleccionado.xml" value="0.26197916666666665" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/fragment_home.xml" value="0.3625" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/fragment_leccion_seleccionada.xml" value="0.26197916666666665" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/fragment_lecciones_seleccionadas.xml" value="0.24166666666666667" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/fragment_login.xml" value="0.3625" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/fragment_recurso_seleccionado.xml" value="0.26197916666666665" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/fragment_recursos_seleccionados.xml" value="0.290625" />
+        <entry key="..\:/ITESM-Programas_Android/ProyectoFinal_Alex/app/src/main/res/layout/recurso_fragment.xml" value="0.24791666666666667" />
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/00_ProyectoFinal/app/src/main/res/layout/activity_main.xml" value="0.165625" />
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/00_ProyectoFinal/app/src/main/res/layout/fragment_login.xml" value="0.2138728323699422" />
         <entry key="..\:/Users/Manuel Wereb/Dropbox/Studium/Semester/TEC de Monterrey/Desarrollo de applicaciones en Android/ProyectoFinal/app/src/main/res/layout/fragment_aprende.xml" value="0.5" />
