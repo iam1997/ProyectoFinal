@@ -68,6 +68,10 @@ class QuizLeccionesFragment : Fragment() {
             findNavController().navigate(action)
         }
 
+        binding.buttonVolverQuizLecciones.setOnClickListener {
+            findNavController().navigate(R.id.action_quizLeccionesFragment_to_homeFragment)
+        }
+
         return binding.root
     }
 
