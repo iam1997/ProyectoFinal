@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.proyectofinal.databinding.FragmentLeccionesSeleccionadasBinding
-import com.example.proyectofinal.databinding.FragmentRecursosSeleccionadosBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

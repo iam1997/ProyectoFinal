@@ -23,13 +23,13 @@ class RecursosViewModel : ViewModel() {
     var recursoA = mutableListOf(
         Flashcards("Con la mano cerrada, se muestran las uñas " +
                 "y se estira el dedo pulgar hacia un lado. La palma mira al frente.",
-            R.drawable.letras_a,"Letra A")
+            R.drawable.abc_a,"Letra A")
     )
 
     var recursoB = mutableListOf(
         Flashcards("Se colocan los pulgares señalando hacia " +
                 "arriba y unidos por los dorsos de los dedos, y se mueven en línea recta hacia usted.",
-            R.drawable.adjetivo_conmigo,"Adjetivos: Conmigo")
+            R.drawable.abc_b,"Adjetivos: Conmigo")
     )
 
     fun setRecurso(option: Int) {
