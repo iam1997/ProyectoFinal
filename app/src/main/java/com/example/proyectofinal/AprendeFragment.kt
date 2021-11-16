@@ -60,8 +60,27 @@ class AprendeFragment : Fragment() {
             findNavController().navigate(R.id.action_aprendeFragment_to_leccionesSeleccionadasFragment)
             saveFavorite()
         }
+
         binding.buttonLeccion2Aprende.setOnClickListener{
             viewModel.setLeccion(2)
+            findNavController().navigate(R.id.action_aprendeFragment_to_leccionesSeleccionadasFragment)
+            saveFavorite()
+        }
+
+        binding.buttonLeccion3Aprende.setOnClickListener {
+            viewModel.setLeccion(3)
+            findNavController().navigate(R.id.action_aprendeFragment_to_leccionesSeleccionadasFragment)
+            saveFavorite()
+        }
+
+        binding.buttonLeccion4Aprende.setOnClickListener {
+            viewModel.setLeccion(4)
+            findNavController().navigate(R.id.action_aprendeFragment_to_leccionesSeleccionadasFragment)
+            saveFavorite()
+        }
+
+        binding.buttonLeccion5Aprende.setOnClickListener {
+            viewModel.setLeccion(5)
             findNavController().navigate(R.id.action_aprendeFragment_to_leccionesSeleccionadasFragment)
             saveFavorite()
         }

@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_homeFragment_to_leccionesFavoritasFragment"
             app:destination="@id/leccionesFavoritasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_quizLeccionesFragment"
+            app:destination="@id/quizLeccionesFragment" />
     </fragment>
     <fragment
         android:id="@+id/recursosFragment"
@@ -75,5 +78,29 @@
         <action
             android:id="@+id/action_recursosSeleccionadosFragment_to_recursosFragment"
             app:destination="@id/recursosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.proyectofinal.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_quizLeccionesFragment"
+            app:destination="@id/quizLeccionesFragment" />
+        <argument
+            android:name="listLeccion"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizLeccionesFragment"
+        android:name="com.example.proyectofinal.QuizLeccionesFragment"
+        android:label="fragment_quiz_lecciones"
+        tools:layout="@layout/fragment_quiz_lecciones" >
+        <action
+            android:id="@+id/action_quizLeccionesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_quizLeccionesFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
     </fragment>
 </navigation>

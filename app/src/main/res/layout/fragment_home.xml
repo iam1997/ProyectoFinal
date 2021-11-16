@@ -41,6 +41,17 @@
         app:layout_constraintTop_toBottomOf="@+id/button_aprendeHome" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_quizHome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Quiz"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_recursosHome" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_leccionesFavoritasHome"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -49,6 +60,6 @@
         app:cornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_recursosHome" />
+        app:layout_constraintTop_toBottomOf="@+id/button_quizHome" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

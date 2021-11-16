@@ -45,6 +45,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_aprendeFragment)
         }
 
+        binding.buttonQuizHome.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_quizLeccionesFragment)
+        }
+
         binding.buttonLeccionesFavoritasHome.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_leccionesFavoritasFragment)
         }

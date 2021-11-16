@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizFragment">
+
+    <ImageView
+        android:id="@+id/imageView_quiz"
+        android:layout_width="361dp"
+        android:layout_height="336dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView_descriptionQuiz"
+        android:layout_width="362dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Description"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_quiz" />
+
+    <TextView
+        android:id="@+id/textView_titleQuiz"
+        android:layout_width="145dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="25dp"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_descriptionQuiz" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_resultadoQuiz"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Mostrar solución"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_siguienteQuiz"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_titleQuiz" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_siguienteQuiz"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Siguiente"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_resultadoQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/textView_titleQuiz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
